@@ -1,0 +1,45 @@
+﻿<Window x:Class="OrgtechYP.Pages.RepairRequest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrgtechYP.Pages"
+        mc:Ignorable="d"
+        Title="Выполение заявки" Height="450" Width="600" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Выполненные заявки" 
+       HorizontalAlignment="Center" 
+       Margin="0,10,0,20" 
+       FontWeight="Bold" 
+       FontSize="20"/>
+
+            <Label x:Name="ZZZ" 
+       Content="Количество выполненных заявок:" 
+       HorizontalAlignment="Left" 
+       Margin="0,0,0,10"/>
+
+            <Label x:Name="QuantityDay" 
+       Content="Среднее количество дней:" 
+       HorizontalAlignment="Left" 
+       Margin="0,0,0,20"/>
+
+            <DataGrid x:Name="dg"  
+          Margin="0,10,0,0" 
+          AutoGenerateColumns="False"  
+          IsReadOnly="True" 
+          SelectionChanged="dg_SelectionChanged" 
+          Height="250">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Номер заявки" Binding="{Binding Path=RequestID}"/>
+                    <DataGridTextColumn Header="Дата" Binding="{Binding Path=StartDate}"/>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Path=EquipmentID}"/>
+                    <DataGridTextColumn Header="Дата завершения" Binding="{Binding Path=CompletionDate}"/>
+                    <DataGridTextColumn Header="Описание проблемы" Binding="{Binding Path=ProblemDescription}"/>
+                    <DataGridTextColumn Header="Статус" Binding="{Binding Path=Statuses.StatusName}"/>
+                    <DataGridTextColumn Header="Клиент" Binding="{Binding Path=Users.FullName}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6b94a1aafe85429ea06082140cbd8b67" Name="Diagram1">
+        <EntityTypeShape EntityType="YPOrgtechBDModel.ActiveRequests" Width="1.5" PointX="7.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.Comments" Width="1.5" PointX="10.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.Equipment" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.EquipmentTypes" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.RepairParts" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.RepairRequests" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.Statuses" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.Users" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPOrgtechBDModel.UserTypes" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__ActiveReq__Reque__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK_ActiveRequests_RepairParts" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK_ActiveRequests_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__Comments__Master__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__Comments__Reques__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__Equipment__Equip__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__RepairReq__Equip__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__RepairReq__Custo__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__RepairReq__Statu__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="YPOrgtechBDModel.FK__Users__UserTypeI__6B24EA82" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

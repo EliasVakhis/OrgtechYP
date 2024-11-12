@@ -1,0 +1,62 @@
+﻿<Window x:Class="OrgtechYP.Pages.Client"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrgtechYP.Pages"
+        mc:Ignorable="d"
+        Title="Клиенты" Height="550" Width="450">
+    <Grid Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Вид оргтехники:" 
+           HorizontalAlignment="Left"/>
+            <ComboBox x:Name="Vid" 
+              DisplayMemberPath="TypeName" 
+              Width="236" 
+              Margin="0,5,0,15" 
+              VerticalAlignment="Top" SelectionChanged="Vid_SelectionChanged"/>
+
+            <Label Content="Модель:" 
+           HorizontalAlignment="Left"/>
+            <TextBox x:Name="model" 
+              Width="236" 
+              Height="23" 
+              Margin="0,5,0,15" 
+              TextWrapping="Wrap" 
+              VerticalAlignment="Top"/>
+
+            <Label Content="Описание проблемы:" 
+           HorizontalAlignment="Left"/>
+            <TextBox x:Name="description" 
+              Width="236" 
+              Height="23" 
+              Margin="0,5,0,15" 
+              TextWrapping="Wrap" 
+              VerticalAlignment="Top"/>
+
+            <Label Content="Заказчик:" 
+           HorizontalAlignment="Left"/>
+            <ComboBox x:Name="Clients" 
+              DisplayMemberPath="FullName" 
+              Width="236" 
+              Margin="0,5,0,15" 
+              VerticalAlignment="Top" SelectionChanged="Clients_SelectionChanged"/>
+
+            <Button Content="Добавить заявку" 
+            Height="27" 
+            Width="217" 
+            Margin="0,5,0,10" 
+            Click="Button_Click" 
+            Background="#67BA80" 
+            HorizontalAlignment="Center"/>
+
+            <Button Content="Мои заявки" 
+            Height="26" 
+            Width="217" 
+            Click="Button_Click2" 
+            Background="#67BA80"  
+            HorizontalAlignment="Center"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
